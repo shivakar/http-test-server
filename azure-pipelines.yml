@@ -34,7 +34,7 @@ steps:
   displayName: 'Unit tests'
 
 - script: |
-    bash <(curl -s https://codecov.io/bash)
+    bash <(curl -s https://codecov.io/bash) -f coverage.txt
   env:
     CODECOV_TOKEN: $(CODECOV_TOKEN)
 
