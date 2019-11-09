@@ -35,6 +35,8 @@ steps:
 
 - script: |
     bash <(curl -s https://codecov.io/bash) -f coverage.txt
+  workingDirectory: '$(modulePath)'
+  displayName: 'Code Coverage'
   env:
     CODECOV_TOKEN: $(CODECOV_TOKEN)
 
