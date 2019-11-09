@@ -18,6 +18,7 @@ var (
 )
 
 func init() {
+	flag.Parse()
 	addrs, err := net.InterfaceAddrs()
 	if err != nil {
 		log.Fatal(err)
